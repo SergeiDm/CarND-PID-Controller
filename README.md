@@ -7,12 +7,22 @@ PID controller based on the cross track error (CTE) which is provided by [a car 
 The project includes the following folder/files:
 - src - the folder with c++ files with PID controller implementation.
 - CMakeLists.txt - the file for building program.
+- illustrations - the folder with pictures for README.md.
 
 ## Dependencies
 For communication between the car simulator and the project, [uWebSockets == 0.13](https://github.com/uWebSockets/uWebSockets/blob/master/README.md) should be used.
 
 ## Project explanation
-Here is PID components (source: http://www.udacity.com/):
+In this project 2 PID controllers were applied:
+- for steering angle. This PID is directly proprotional:
+
+  - CTE
+  - CTE change rate
+  - Sum (integral) of CTE over time
+It means the more CTE, the more steering angle.
+- for speed (velocity). The PID is inversely proportional absolute values of the same things mentioned in previous PID. So, the more CTE, the less velocity. This is because a big value of CTE means increasing steering angle, so for staying on the track the velocity should be decreased.
+
+Here is how PID components affect the trajectory (source: http://www.udacity.com/):
 
 <img src="https://github.com/SergeiDm/CarND-PID-Controller/blob/master/illustrations/PID.png" width="500" height="400"/>
 
