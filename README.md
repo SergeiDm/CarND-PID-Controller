@@ -39,4 +39,4 @@ The final values are 0.4, 0, 0.1.
 Here is the result video of this project:
 
 <a href="https://youtu.be/2VPTpG9AUoQ" target="_blank"><img src="http://img.youtube.com/vi/2VPTpG9AUoQ/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="400" height="300" border="10" /></a>
