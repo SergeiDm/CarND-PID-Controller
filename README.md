@@ -24,17 +24,16 @@ It means the more CTE, the more steering angle.
 
 - for speed (velocity). The PID is inversely proportional absolute values of the same things mentioned in previous PID. So, the more CTE, the less velocity. This is because a big value of CTE means increasing steering angle, so for staying on the track the velocity should be decreased.
 
-Here is how PID components affect the trajectory (source: http://www.udacity.com/):
+Here is how PID components (for steering angle) affect the trajectory (source: http://www.udacity.com/):
 
 <img src="https://github.com/SergeiDm/CarND-PID-Controller/blob/master/illustrations/PID.png" width="400" height="300"/>
 
+P component creates periodic fluctuations, D component decreases them. At the same time I component is used for overcoming biases (for example a steering wheel has inappropriate adjustment).
 
-Describe the effect each of the P, I, D components had in your implementation.
-Student describes the effect of the P, I, D component of the PID algorithm in their implementation. Is it what you expected?
-Visual aids are encouraged, i.e. record of a small video of the car in the simulator and describe what each component is set to.
+In this project, manual series tuning was used for finding appropriate hyperparameters for PID components. Firstly for P component, after   testing that steering angle values were anough for keeping the vehicle on the track, hyperparameter for D was tuned in order to decrease periodic fluctuations. Finally, hyperparameter for I component was chosen according to making better staying the vehicle on the track. The final hyperparameters values are 0.06, 0.05, 0.06.
 
-Describe how the final hyperparameters were chosen.
-Student discusses how they chose the final hyperparameters (P, I, D coefficients). This could be have been done through manual tuning, twiddle, SGD, or something else, or a combination!
+Hyperparameters for PID controller for speed were chosen according to the results how fast the vehicle can move on the track.
+The final values are 0.4, 0, 0.1.
 
 ## Project result
 Here is the result video of this project:
