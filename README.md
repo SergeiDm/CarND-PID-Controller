@@ -19,12 +19,14 @@ In this project 2 PID controllers were applied:
   - CTE
   - CTE change rate
   - Sum (integral) of CTE over time
+
 It means the more CTE, the more steering angle.
+
 - for speed (velocity). The PID is inversely proportional absolute values of the same things mentioned in previous PID. So, the more CTE, the less velocity. This is because a big value of CTE means increasing steering angle, so for staying on the track the velocity should be decreased.
 
 Here is how PID components affect the trajectory (source: http://www.udacity.com/):
 
-<img src="https://github.com/SergeiDm/CarND-PID-Controller/blob/master/illustrations/PID.png" width="500" height="400"/>
+<img src="https://github.com/SergeiDm/CarND-PID-Controller/blob/master/illustrations/PID.png" width="400" height="300"/>
 
 
 Describe the effect each of the P, I, D components had in your implementation.
