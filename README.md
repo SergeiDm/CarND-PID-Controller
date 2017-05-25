@@ -18,7 +18,7 @@ For communication between the car simulator and the project, [uWebSockets](https
 
 `endif(${CMAKE_SYSTEM_NAME} MATCHES "Windows")`
 
-"pathtovkpg" should be changed into corresponding path for OS Windows.
+"pathtovckpg" should be changed into corresponding path (for OS Windows).
 
 
 ## Project explanation
