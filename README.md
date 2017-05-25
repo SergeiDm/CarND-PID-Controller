@@ -11,11 +11,13 @@ The project includes the following folder/files:
 
 ## Dependencies
 For communication between the car simulator and the project, [uWebSockets](https://github.com/uWebSockets/uWebSockets/blob/master/README.md) should be installed and in lines of [CMakeLists.txt](https://github.com/SergeiDm/CarND-PID-Controller/blob/master/CMakeLists.txt):
+
 `if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 
 include_directories("pathtovckpg/vcpkg/installed/x86-windows/include/uWS")
 
-endif(${CMAKE_SYSTEM_NAME} MATCHES "Windows")` 
+endif(${CMAKE_SYSTEM_NAME} MATCHES "Windows")`
+
 "pathtovkpg" should be changed into corresponding path for OS Windows.
 
 
