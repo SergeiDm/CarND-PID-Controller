@@ -23,7 +23,7 @@ For communication between the car simulator and the project, [uWebSockets](https
 
 ## Project explanation
 In this project 2 PID controllers were applied:
-- for steering angle. This PID is directly proprotional:
+- for steering angle. This PID is directly proprotional to:
 
   - CTE
   - CTE change rate
